@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774");
 * {
   padding: 0;
   margin: 0;
@@ -19,7 +22,6 @@ a {
   text-align: right;
   font-family: SF Pro Display;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.3px;
@@ -30,10 +32,16 @@ a:hover {
 a button {
   cursor: pointer;
 }
+@media (max-width: 554px) {
+  a .container {
+    max-width: 319px;
+  }
+}
 
 .card {
   padding: 48px;
   max-width: 456px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,9 +56,19 @@ a button {
   color: #1a1a1a;
   font-family: Poppins;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: 28px;
+}
+@media (max-width: 554px) {
+  .card {
+    padding: 24px 16px 16px;
+    margin: 0;
+    max-width: 358px;
+    height: 100vh;
+  }
+  .card__img {
+    display: none;
+  }
 }
 
 .form {
@@ -65,7 +83,6 @@ a button {
   color: #333;
   font-family: SF Pro Display;
   font-size: 11px;
-  font-style: normal;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 0.3px;
@@ -75,28 +92,29 @@ a button {
   border-radius: 6px;
   border: 0.5px solid #e5e5e5;
   background: #f2f2f2;
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
+  height: 48px;
   padding: 8px 8px 8px 16px;
   justify-content: space-between;
   align-items: center;
   color: #808080;
   font-family: Roboto;
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
 .form__position {
   position: relative;
-  max-width: 336px;
 }
 .form__eye {
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 50%;
-  right: 1%;
-  transform: translate(50%, -50%);
+  right: 3%;
+  transform: translateY(-50%);
   background: #f2f2f2;
-  padding: 8px;
   cursor: pointer;
   border: none;
 }
@@ -118,7 +136,6 @@ a button {
   text-align: center;
   font-family: Roboto;
   font-size: 15px;
-  font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.3px;
@@ -131,6 +148,27 @@ a button {
   height: 0.5px;
   align-self: stretch;
   background: #e5e5e5;
+}
+@media (max-width: 554px) {
+  .form {
+    margin: 24px auto 24px;
+  }
+  .form__label {
+    display: none;
+  }
+  .form__btn {
+    margin: 24px 0 24px;
+  }
+  .form__input {
+    max-width: 343px;
+    margin-bottom: 12px;
+  }
+  .form__info {
+    margin-top: 0;
+  }
+  .form__eye {
+    top: 40%;
+  }
 }
 
 /* The switch - the box around the slider */
@@ -146,7 +184,6 @@ a button {
   color: #1a1a1a;
   font-family: SF Pro Display;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.3px;
@@ -209,7 +246,6 @@ a button {
   text-align: center;
   font-family: SF Pro Display;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 166.667% */
   letter-spacing: 0.3px;
@@ -227,7 +263,6 @@ a button {
   color: #1a1a1a;
   font-family: SF Pro Display;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.3px;
@@ -252,10 +287,14 @@ a button {
   color: #666;
   font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: -0.4px;
+}
+@media (max-width: 554px) {
+  .info__sign {
+    margin: 24px 0;
+  }
 }
 
 .home {
@@ -271,7 +310,6 @@ a button {
   color: #fff;
   font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: -0.4px;
@@ -285,4 +323,9 @@ a button {
 }
 .home__content {
   display: flex;
+}
+@media (max-width: 554px) {
+  .home__img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
