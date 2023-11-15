@@ -1,0 +1,23 @@
+.card {
+  padding: 48px;
+  max-width: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+    color: #1a1a1a;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}
