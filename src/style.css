@@ -62,9 +62,16 @@ a button {
 @media (max-width: 554px) {
   .card {
     padding: 24px 16px 16px;
-    margin: 0;
+    margin: 0 auto;
     max-width: 358px;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .card__top {
+    display: none;
+  }
+  .card__subtitle {
+    margin-top: 0;
   }
   .card__img {
     display: none;
@@ -277,6 +284,7 @@ a button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 .info__bottom__contact {
   display: flex;
@@ -291,9 +299,17 @@ a button {
   line-height: 16px;
   letter-spacing: -0.4px;
 }
+.info__bottom__img {
+  text-align: center;
+  display: none;
+}
 @media (max-width: 554px) {
   .info__sign {
     margin: 24px 0;
+  }
+  .info__bottom__img {
+    display: block;
+    margin: 80px 0;
   }
 }
 

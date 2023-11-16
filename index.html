@@ -22,6 +22,7 @@
       href="/src/img/favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="./src/img/favicon_io/site.webmanifest" />
+    <script src="./src/script/script.js" defer></script>
     <title>Sign in Layouts</title>
   </head>
   <body>
@@ -115,6 +116,25 @@
                   </div>
                 </div>
               </div>
+              <div class="info__bottom__img">
+                <img
+                  class="card__icon"
+                  src="./src/img/card/logo.png"
+                  srcset="
+                    ./src/img/card/logo.png    1x,
+                    ./src/img/card/logo@2x.png 2x
+                  "
+                  alt="logo"
+                />
+                <img
+                  src="./src/img/card/title.png"
+                  srcset="
+                    ./src/img/card/title.png    1x,
+                    ./src/img/card/title@2x.png 2x
+                  "
+                  alt="title"
+                />
+              </div>
               <div class="info__bottom">
                 <div class="info__bottom__contact">
                   <svg
@@ -151,7 +171,9 @@
                   </svg>
                   <a href="https://www.figma.com/@uiunicorn">@uiunicorn</a>
                 </div>
-                <p class="info__bottom__text">© Perfect Login 2021</p>
+                <p class="info__bottom__text">
+                  © Perfect Login <span id="year"></span>
+                </p>
               </div>
             </div>
           </div>
